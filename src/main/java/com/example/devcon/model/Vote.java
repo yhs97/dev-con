@@ -11,6 +11,11 @@ import javax.validation.constraints.NotNull;
 import static javax.persistence.FetchType.LAZY;
 import static javax.persistence.GenerationType.IDENTITY;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@Builder
 public class Vote {
     @Id
     @GeneratedValue(strategy = IDENTITY)
